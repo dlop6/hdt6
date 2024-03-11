@@ -1,20 +1,25 @@
 package com.MapFiles;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.TreeMap;
-import java.util.Map;
+import java.io.IOException;
 
 public class MapFactory {
-    public static <K, V> Map<K, V> createMap(int type) {
-        if (type == 1) {
-            return new HashMap<>();
-        } else if (type == 2) {
-            return new TreeMap<>();
-        } else if (type == 3) {
-            return new LinkedHashMap<>();
-        } else {
-            return null;
+
+    public static MapsImplementations createMapImplementation(int type) {
+    try {
+        switch (type) {
+            case 1:
+                return null;
+            case 2:
+                return new TreeMapImplementation();
+            case 3:
+                return null;
+            default:
+                throw new IllegalArgumentException("Invalid map implementation type: " + type);
         }
+    } catch (IOException e) {
+        e.printStackTrace(); 
+        return null; 
     }
+}
+
 }

@@ -1,19 +1,20 @@
 package com;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import com.MapFiles.MapFactory;
-
-import java.util.Map;
+import com.MapFiles.MapsImplementations;
 
 public class App {
 
-    public static Map<String, String> map;
+    public static MapsImplementations map;
+    public static boolean isRunning = true;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Bienvenido a tu colección de cartas!");
-        System.out.println("Elige el tipo de mapa  que deseas utilizar:");
+        System.out.println("Elige el tipo de mapa que deseas utilizar:");
         System.out.println("1. HashMap");
         System.out.println("2. TreeMap");
         System.out.println("3. LinkedHashMap");
@@ -23,63 +24,73 @@ public class App {
         switch (type) {
             case 1:
                 System.out.println("Has seleccionado HashMap");
-                map = MapFactory.createMap(type);
+                map = MapFactory.createMapImplementation(type);
                 break;
             case 2:
                 System.out.println("Has seleccionado TreeMap");
-                map = MapFactory.createMap(type);
+                map = MapFactory.createMapImplementation(type);
                 break;
             case 3:
                 System.out.println("Has seleccionado LinkedHashMap");
-                map = MapFactory.createMap(type);
+                map = MapFactory.createMapImplementation(type);
                 break;
             default:
                 System.out.println("Opción no válida");
                 break;
         }
 
-        System.out.println("Elige una opción:");
-        System.out.println("1. Agregar carta de las cartas disponibles");
-        System.out.println("2. Ver  tipoS de carta de la colección disponible");
-        System.out.println("3. Mostrar nombre, tipo y cantidad de cartas de mi colección");
-        System.out.println("4. Mostrar nombre, tipo y cantidad de cartas de mi colección ordenadas por tipo");
-        System.out.println("5. Mostrar nombre, tipo y cantidad de cartas de todas las cartas disponibles");
-        System.out.println("6. Mostrar nombre y tipo de todas las cartas disponibles ordenadas por tipo");
-        System.out.println("7. Salir");
+        while (isRunning) {
+            System.out.println("-------------------------------------------------");
+            System.out.println("Elige una opción:");
+            System.out.println("1. Agregar carta de las cartas disponibles");
+            System.out.println("2. Ver tipos de carta de la colección disponible");
+            System.out.println("3. Mostrar nombre, tipo y cantidad de cartas de mi colección");
+            System.out.println("4. Mostrar nombre, tipo y cantidad de cartas de mi colección ordenadas por tipo");
+            System.out.println("5. Mostrar nombre, tipo y cantidad de cartas de todas las cartas disponibles");
+            System.out.println("6. Mostrar nombre y tipo de todas las cartas disponibles ordenadas por tipo");
+            try {
+                int option = scanner.nextInt();
+                scanner.nextLine(); 
 
-        int option = scanner.nextInt();
-
-        switch (option) {
-            case 1:
-                System.out.println("Ingresa el nombre de la carta:");
-                String name = scanner.next();
-                System.out.println("Ingresa el tipo de la carta:");
-                String typeCard = scanner.next();
-                map.put(name, typeCard);
-                break;
-            case 2:
-                System.out.println("Tipo de carta de la colección disponible:");
-                break;
-            case 3:
-                System.out.println("Nombre, tipo y cantidad de cartas de mi colección:");
-                
-                break;
-            case 4:
-                System.out.println("Nombre, tipo y cantidad de cartas de mi colección ordenadas por tipo:");
-                break;
-            case 5:
-                System.out.println("Nombre, tipo y cantidad de cartas de todas las cartas disponibles:");
-                break;
-            case 6:
-                System.out.println("Nombre y tipo de todas las cartas disponibles ordenadas por tipo:");
-                break;
-            case 7:
-                System.out.println("Adiós!");
-                break;
-            default:
+                switch (option) {
+                    case 1:
+                        System.out.println("Ingresa el nombre de la carta:");
+                        String name = scanner.nextLine();
+                        map.addCard(name);
+                        break;
+                    case 2:
+                        System.out.println("Tipos de carta de la colección disponible:");
+                        map.getUniqueValues();
+                        
+                        break;
+                    case 3:
+                        System.out.println("Nombre, tipo y cantidad de cartas de mi colección:");
+                        map.countCollection(map.cards);
+                        break;
+                    case 4:
+                        System.out.println("Nombre, tipo y cantidad de cartas de mi colección ordenadas por tipo:");
+                        // TODO: Implement logic to display name, type, and quantity of cards in the collection sorted by type
+                        break;
+                    case 5:
+                        System.out.println("Nombre, tipo y cantidad de cartas de todas las cartas disponibles:");
+                        map.countCollection(map.Map);
+                        break;
+                    case 6:
+                        System.out.println("Nombre y tipo de todas las cartas disponibles ordenadas por tipo:");
+                        // TODO: Implement logic to display name and type of all available cards sorted by type
+                        break;
+                    case 7:
+                        System.out.println("Adiós!");
+                        isRunning = false;
+                        break;
+                    default:
+                        System.out.println("Opción no válida");
+                        break;
+                }
+            } catch (InputMismatchException e) {
                 System.out.println("Opción no válida");
-                break;
+                scanner.nextLine(); // Clear the input buffer
+            }
         }
     }
-
 }
