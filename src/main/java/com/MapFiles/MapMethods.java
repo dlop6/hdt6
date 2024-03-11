@@ -1,4 +1,4 @@
-package com;
+package com.MapFiles;
 
 public interface MapMethods {
     public void put(String key, String value);

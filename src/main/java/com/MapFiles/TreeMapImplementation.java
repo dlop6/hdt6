@@ -1,4 +1,4 @@
-package com;
+package com.MapFiles;
 
 
 import java.util.TreeMap;
@@ -6,6 +6,11 @@ import java.util.TreeMap;
 public class TreeMapImplementation<K, V> implements  MapMethods {
 
     TreeMap<String, String> treeMap = new TreeMap<>();
+
+
+    public TreeMapImplementation(TreeMap<String, String> treeMap){
+        this.treeMap = treeMap;
+    }
 
     @Override
     public void put(String key, String value) {

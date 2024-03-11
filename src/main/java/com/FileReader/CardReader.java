@@ -1,4 +1,4 @@
-package FileReader;
+package com.FileReader;
 
 import java.io.IOException;
 import java.util.Map;

@@ -1,9 +1,12 @@
 package com;
 
 import java.util.Scanner;
+
+import com.MapFiles.MapFactory;
+
 import java.util.Map;
 
-public class Main {
+public class App {
 
     public static Map<String, String> map;
 
