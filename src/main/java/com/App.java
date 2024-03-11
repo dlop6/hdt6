@@ -65,7 +65,7 @@ public class App {
                         break;
                     case 3:
                         System.out.println("Nombre, tipo y cantidad de cartas de mi colección:");
-                        map.countCollection(map.cards);
+                        map.countCollection(map.Map);
                         break;
                     case 4:
                         System.out.println("Nombre, tipo y cantidad de cartas de mi colección ordenadas por tipo:");
@@ -73,7 +73,7 @@ public class App {
                         break;
                     case 5:
                         System.out.println("Nombre, tipo y cantidad de cartas de todas las cartas disponibles:");
-                        map.countCollection(map.Map);
+                        map.countCollection(map.cards);
                         break;
                     case 6:
                         System.out.println("Nombre y tipo de todas las cartas disponibles ordenadas por tipo:");

@@ -1,14 +1,11 @@
 package com.MapFiles;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import java.util.stream.Stream;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
 
 import com.FileReader.TextFileCardReader;
 
