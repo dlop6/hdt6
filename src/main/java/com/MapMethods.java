@@ -9,9 +9,9 @@ public interface MapMethods {
 
     public void countCollection();
 
-    public void sortAll(String key);
+    public <T> void sortAll(T key);
 
-    public void sortCollection(String key);
+    public <T> void sortCollection(T key);
 
 }
 

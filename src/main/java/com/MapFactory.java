@@ -3,17 +3,16 @@ package com;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.TreeMap;
-
 import java.util.Map;
 
 public class MapFactory {
-    public static Map<String, String> createMap(int type) {
+    public static <K, V> Map<K, V> createMap(int type) {
         if (type == 1) {
-            return new HashMap<String, String>();
+            return new HashMap<>();
         } else if (type == 2) {
-            return new TreeMap<String, String>();
+            return new TreeMap<>();
         } else if (type == 3) {
-            return new LinkedHashMap<String, String>();
+            return new LinkedHashMap<>();
         } else {
             return null;
         }
