@@ -48,6 +48,7 @@ public class App {
             System.out.println("4. Mostrar nombre, tipo y cantidad de cartas de mi colección ordenadas por tipo");
             System.out.println("5. Mostrar nombre, tipo y cantidad de cartas de todas las cartas disponibles");
             System.out.println("6. Mostrar nombre y tipo de todas las cartas disponibles ordenadas por tipo");
+            System.out.println("7. Salir");
             try {
                 int option = scanner.nextInt();
                 scanner.nextLine(); 
