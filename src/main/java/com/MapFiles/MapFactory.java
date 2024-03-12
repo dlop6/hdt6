@@ -8,11 +8,11 @@ public class MapFactory {
     try {
         switch (type) {
             case 1:
-                return null;
+                return new HashMapImplementation();
             case 2:
                 return new TreeMapImplementation();
             case 3:
-                return null;
+                return new LinkedHashMapImplementation();
             default:
                 throw new IllegalArgumentException("Invalid map implementation type: " + type);
         }
