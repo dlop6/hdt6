@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5689502c-b6a7-42ab-a812-f48016afc257" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FileReader/CardReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FileReader/CardReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FileReader/TextFileCardReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FileReader/TextFileCardReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/MapFiles/MapFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MapFiles/MapFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/MapFiles/MapMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MapFiles/MapMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/MapFiles/MapsImplementations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MapFiles/MapsImplementations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/MapFiles/TreeMapImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MapFiles/TreeMapImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/PruebaLector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/PruebaLector.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2dZ1mH1X99qdiaP2rCdIhkqh7tx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Profiler#1",
+    "Application.Run Java.executor": "Profiler#1",
+    "Application.Unnamed.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "profiler.jvm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Run Java" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.App" />
+      <module name="hdt6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5689502c-b6a7-42ab-a812-f48016afc257" name="Changes" comment="" />
+      <created>1710200946043</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710200946043</updated>
+      <workItem from="1710200961532" duration="2216000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../../../../../../../Program Files/Java/jdk-21/lib/src.zip!/java.base/sun/nio/cs/StreamEncoder.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
