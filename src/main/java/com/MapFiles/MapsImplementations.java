@@ -39,12 +39,8 @@ public abstract class MapsImplementations {
     }
 
     public void countCollection(Map<String, String> MapToUse) {
-        System.out.println("La cantidad de cartas disponibles  es: " + MapToUse.size());
-
         for (String key : MapToUse.keySet()) {
-            System.out.println("-----------------------------------------------");
-            System.out.println("Nombre: " + key);
-            System.out.println("Tipo: " + MapToUse.get(key));
+            System.out.println("Nombre: " + key + " Tipo: " + MapToUse.get(key));
         }
     }
 

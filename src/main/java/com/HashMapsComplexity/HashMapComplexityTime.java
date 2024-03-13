@@ -23,9 +23,7 @@ public class HashMapComplexityTime {
             e.printStackTrace();
         }
         long startTime = System.nanoTime();
-        for (Map.Entry<String, String> entry : hashMap.Map.entrySet()) {
-            System.out.println("Nombre: " + entry.getKey() + " Tipo: " + entry.getValue());
-        }
+        hashMap.countCollection(hashMap.Map);
 
         long endTime = System.nanoTime();
         long duration = (endTime - startTime);
@@ -39,11 +37,6 @@ public class HashMapComplexityTime {
         HashMapComplexityTime hashMapComplexityTime = new HashMapComplexityTime();
         hashMapComplexityTime.medirComplejidadTiempo();
     }
-
-    
-
-
-
 
     
 }
