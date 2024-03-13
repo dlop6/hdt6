@@ -25,4 +25,15 @@ public class sortByType extends MapsImplementations {
             }
         }
     }
+    
+    public void printCardsByType(String cardType) {
+        System.out.println("Cartas ordenadas por tipo " + cardType + ":");
+        
+        for (String key : Map.keySet()) {
+            String type = Map.get(key);
+            if (type.equalsIgnoreCase(cardType)) {
+                System.out.println("Nombre: " + key + " Tipo: " + type);
+            }
+        }
+    }
 }
