@@ -82,7 +82,7 @@ public class App {
                         System.out.println("Nombre, tipo y cantidad de cartas de todas las cartas disponibles:");
                         map.countCollection(map.cards);
                         break;
-                        case 6:
+                    case 6:
                         System.out.println("Nombre y tipo de todas las cartas disponibles ordenadas por tipo:");
                         sortByType allCardsSorter = new sortByType(map.cards);
                         System.out.println("Elige el tipo de carta que deseas imprimir:");
