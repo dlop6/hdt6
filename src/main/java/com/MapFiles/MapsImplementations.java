@@ -21,7 +21,6 @@ public abstract class MapsImplementations {
     }
 
     public void addCard(String key) {
-
         if (cards.containsKey(key)) {
             Map.put(key, cards.get(key));
             System.out.println("La carta '" + key + "' ha sido agregada al mazo");
